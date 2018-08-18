@@ -1,0 +1,381 @@
+/* Header (Nav bar) */
+
+header {
+   display: flex;
+  background-color: #464951;
+  position: fixed;
+  width: 100%;
+  box-shadow: 3px 3px 5px 5px;
+}
+.logo {
+  z-index: 1;
+  color: white;
+  margin-top: 0.4%;
+  margin-left: 1%;
+}
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #464951;
+}
+li {
+  display: inline;
+  padding-top: 10px;
+  margin-top: -1px;
+  height: 20px;
+  list-style-type: none;
+  width: 150px;
+}
+li > a, li > a:hover {
+  color: white;
+  font-size: 23px;
+}
+
+/* body */
+
+body {
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/*  Main Image  */
+
+.main-img {
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-image: url('https://cdn-images-1.medium.com/max/1920/1*nJCm0Uc5BOq12faK2KR4Dw.jpeg');
+    background-size: cover;
+    background-position: center top;
+    height: 1200px;
+    visibility: inherit;
+    text-transform: none;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-overlay {
+background: auto;
+  color: white;
+  padding: 20px;
+  width: auto;
+  margin: 0 auto;
+  overflow: auto;
+  width: relative;
+}
+.text-overlay > h2 {
+  font-size: 60px;
+}
+
+.overlay-button {
+  color: white;
+  height: 50px;
+  width: relative;
+  border: 3px solid white;
+  border-radius: 20px;
+  font-size: 27px;
+  background-color: transparent;
+  margin-top: 1%;
+}
+
+.overlay-button:hover {
+  background-color: white;
+  border-color: black;
+}
+.overlay-button-a:hover {
+  color: black;
+  text-decoration: none;
+}
+#first-h2-overlay {
+  margin-bottom: 3%;
+}
+
+/* Survey */
+
+.signIn, .questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 1%;
+  width: 90%;
+  height: relative;
+  text-align: left;
+}
+input[type="text"] {
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  height: 37px;
+}
+.signIn > label {
+  font-size: 18px;
+}
+.questions {
+  margin-top: -10px;
+  padding-bottom: 2%;
+  justify-content: center;
+  text-align: left;
+  font-size: 23px;
+  margin: 0 auto;
+  width: 50%;
+  border: 1px solid black;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom: 0px solid white;
+}
+
+.selectLabel, .checkboxLabel {
+  font-size: 23px;
+   line-height: 1.3;
+}
+select {
+  margin-top: 10px;
+  font-size: 20px;
+  height: 40px;
+}
+.signIn {
+  margin-top: 20px;
+}
+h3 {
+  font-size: 22px;
+}
+#friendOption {
+  width: 20px;
+  height: 20px;
+  list-style-type: squared;
+}
+a {
+  color: white;
+}
+a:hover {
+    color: white;
+  }
+.friend-alignleft {
+  display: flex;
+  text-align: left !important;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+.friend-alignCenter {
+  margin-top: 10px; 
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: -30px;
+  margin-top: 20px;
+}
+.subForum {
+  padding: 20px;
+  margin-top: 1%;
+}
+.questions_hr {
+  border: 1px solid black;
+  width: 80%;
+  margin: 0 auto;
+    margin-top: 4%;
+}
+.border-form {
+  border-radius: 20px;
+  border: 1px solid black; 
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  background-color: white;
+/*   height: 280px; */
+/* height: 1000px; */
+  height: relative;
+}
+textarea {
+  min-height: 75px;
+  height: relative;
+  width: relative;
+  min-width: 200px;
+  font-size: 14px;
+}
+.begin_survey_button {
+  height: 40px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 23px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 1%;
+  padding: 8px;
+}
+.begin_survey_button:hover {
+  background-color: #edeff2;
+}
+#survey_background {
+  background-color: #edeff2;
+}
+#survey {
+  padding-top: 1%;
+  height: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex;
+}
+.desc {
+  font-size: 42px;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  background-color: #464951;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 2%;
+  padding-bottom: 4%;
+}
+
+footer > hr {
+color: white; border: 1px solid white; width: 80%; margin: 0 auto;  
+}
+@media screen and (max-width: 1007px) {
+  .questions_hr {
+    width: 100%;
+  }
+  .text-overlay {
+    width: 100%;
+  }
+  .signIn, .questions {
+    width: 75%;
+  }
+  .desc {
+    font-size: 30px;
+  }
+   .border-form  {
+    width: 100%;
+/*      height: 270px; */
+  }
+  .text-overlay > button {
+  height: 40px;
+  font-size: 23px;
+}
+  .text-overlay > h2 {
+     font-size: 47px;
+  }
+  li {
+width: 100px;
+  }
+  li > a {
+  color: white;
+  font-size: 20px;
+}
+}
+@media screen and (max-width: 641px){
+  footer > h2 {
+    font-size: 20px;
+  }
+  footer > h3 {
+   font-size: 18px;
+  }
+  footer > h4 {
+   font-size: 16px;
+  }
+  footer > hr {
+    width: 100%;
+  }
+  textarea {
+    width: relative;
+  }
+  .questions {
+    border: 0px solid white;
+  }
+  .role, .friend, #friendOption {
+  font-size: 18px;
+   line-height: 1;
+}
+  h3 {
+    font-size: 20px;
+  }
+ #first-h2-overlay {
+    margin-bottom: 0%;
+  }
+  .signIn > [type="text"] {
+  font-size: 20px;
+  height: 40px;
+}
+/*   #begin_survey_button {
+    height: 30px;
+    font-size: 15px;
+    padding: 5px;
+  } */
+  .signIn, .questions {
+    width: 95%;
+  }
+  .desc {
+    font-size: 5vw;
+  }
+  .text-overlay > button {
+    display: none;
+}
+  .text-overlay {
+  width: 100%;
+    text-align: center;
+    }
+  .text-overlay > h2 {
+     font-size: 7.5vw;
+  }
+  .main-img {
+    height: 500px;
+  }
+  .logo {
+margin-left: -1%;
+  }
+  .wrap {
+    height: 5px;
+  }
+  header {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+   li {
+     display: none;
+width: 110px;
+  }
+  li > a {
+
+    display: none;
+  font-size: 15px;
+     width: 100%;
+}
+}
+@media screen and (max-width: 400px) {
+   #first-h2-overlay {
+    margin-bottom: -8%;
+  }
+  .border-form {
+    padding: 0px;
+    padding-top: 5px;
+/*     height: 250px; */
+  }
+  .questions {
+    border: 0px solid white;
+  }
+  .desc {
+    font-size: 20px;
+  }
+   .text-overlay > button {
+  height: 30px;
+  font-size: 14px;
+}
+  .text-overlay > h2 {
+    font-size: 22px;
+  }
+}
