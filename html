@@ -1,0 +1,139 @@
+<body>
+
+  <head>
+  </head>
+  <main>
+    <header>
+      <h1 class="logo"><a href="#home" style="color: white;">SurveyCo</a></h1>
+      <div class="wrap">
+        <ul class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#survey">Survey</a></li>
+          <li><a href="#footer">About</a></li>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <div class="main-img" id="home">
+        <!-- The img itself is a background image-->
+        <div class="text-overlay">
+          <h2 id="first-h2-overlay">Join the Millions today</h2>
+          <h2>Take the survey</h2>
+          <button class="overlay-button"><a href="#survey" class="overlay-button-a">Start Now</a></button>
+        </div>
+      </div>
+    </section>
+    <section id="survey_background">
+      <!-- This is for my navigation bar and so i can create the darker background-->
+      <div id="survey">
+        <!-- So i can group every part of the survey  one column (.signIn and .questions)-->
+        <h3 class="desc">Describe the <span style="font-family: sax-mono, monospace;">freeCodeCamp</span> experince</h3>
+        <div class="border-form">
+          <!-- The white box-->
+          <div class='signIn'>
+            <!-- The 3 boxes -->
+            <label for="name">First and Last name</label>
+            <input type="text" name="name" placeholder="Real name" name="name">
+            <label for="cName">Camper Name</label>
+            <input type="text" name="cName" placeholder="Camper Name" name="number">
+            <label for="email">Email Address</label>
+            <input type="text" name="email" placeholder="Your Email">
+            <hr style="border: 0.5px solid black;" />
+          </div>
+          <div class="questions">
+            <!-- all quetsions will go here -->
+
+            <div class="subForum">
+              <label class="selectLabel">1. What is your current role?</h3>
+              <select>
+              <option>Student</option>
+              <option>Full Time Job</option>
+              <option>Full Time Learner</option>
+              <option>Pefer not to say</option>
+              <option>Other</option>
+            </select>
+            </div>
+            <div class="subForum">
+            <label class="checkboxLabel">2. How likely is that you would recommend freeCodeCamp to a friend?</label>
+              <div class="friend-alignCenter">
+              <div class="friend-alignleft">
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Definitely</label><br>
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Maybe</label><br>
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Not Sure</label><br>
+              </div>
+              </div>
+          </div>
+            <div class="subForum">
+              <label class="selectLabel">3. What do you like most in FCC:</h3>
+              <select  id='role' name="role">
+              <option>Challenges</option>
+              <option>Projects</option>
+              <option>Commuinity</option>
+              <option>Open Source</option>
+            </select>
+            </div>
+            <div class="subForum">
+            <label class="checkboxLabel">4. Things that should be improved in the future
+(Check all that apply)</label>
+             <div class="friend-alignCenter">
+              <div class="friend-alignleft">
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Front-end Projects</label><br>
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Back-end Projects</label><br>
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Data Visualization </label><br>
+                <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Challenges</label><br>
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Open Source Community
+</label><br>
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Gitter help rooms</label><br>
+                <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Videos</label><br>
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> City Meetups</label><br>
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Wiki</label><br>
+                <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Forum</label><br>
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Additional Courses</label><br>
+              </div>
+              </div>
+          </div>
+             <div class="subForum">
+            <label class="checkboxLabel">5. Things that should be improved in the future
+(Check all that apply)</label>
+             <div class="friend-alignCenter">
+              <div class="friend-alignleft">
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Front-end Projects</label><br>
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Back-end Projects</label><br>
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Data Visualization </label><br>
+                <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Challenges</label><br>
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Open Source Community
+</label><br>
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Gitter help rooms</label><br>
+                <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Videos</label><br>
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> City Meetups</label><br>
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Wiki</label><br>
+                <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Forum</label><br>
+              <label style="font-size:20px;"><input id="friendOption" type="checkbox" name=""> Additional Courses</label><br>
+              </div>
+              </div>
+          </div>
+            <div class="subForum">
+              <label class="checkboxLabel">6. Any Comments or Suggestions for future updates?</label>
+              <div class="friend-alignCenter">
+              <div class="friend-alignleft">
+                <textarea type="text" placeholder="Enter your comments here..."></textarea>
+                </div>
+              </div>
+            </div>
+            <hr class="questions_hr"/>
+            <div class="subForum" style="text-align: center;">
+                              <button class="begin_survey_button" href="#" target="_blank">Submit Survey</button>
+            </div>
+        </div> <!--questions -->
+      </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <h2><a href="https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form">Responsive Web Design Projects > Build a Survey Form</a><h2>
+        <hr/>
+        <h3>This webpage was made and designed by <a>Michael Nicol</a> as apart of the freeCodeCamp curriculum;</h3>
+      <h4>The questions i used was from the<a style="text-decoration: underline;" href='https://codepen.io/freeCodeCamp/full/VPaoNP' target="_blank"> FCC example Project</a> and the main image used was from <a href='http://www.images-hd.download/coding-images/' target="_blank" style="text-decoration: underline;" >Images hd-download</a>.</h4>
+          </footer>
+  </main>
+</body>
+    
